@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VACUNAS DE MASCOTAS</title>
+</head>
+<body>
+    <main>
+        <h1>🐶 Seguimiento de Vacunas</h1>
+
+        <h2>Agregar mascota</h2>
+        <form method="POST" action="/agregar">
+            <input name="nombre" placeholder="Nombre">
+            <input name="vacuna" placeholder="tipo de vacuna">
+            <input name="fecha" placeholder="Fecha vacuna">
+            <button>Agregar</button>
+        </form>
+
+        <h2>Actualizar vacuna</h2>
+        <form method="POST" action="/actualizar">
+            <input name="nombre" placeholder="Nombre">
+            <input name="vacuna" placeholder="tipo de vacuna">
+            <input name="fecha" placeholder="Nueva fecha">
+            <button>Actualizar</button>
+        </form>
+
+        <h2>Listado</h2>
+
+        {% for nombre, vacunas in mascotas.items() %}
+        <div class="card">
+            <b>{{nombre}}</b>
+
+            <ul>
+            {% for v in vacunas %}
+                <li>{{v.vacuna}} → {{v.fecha}}</li>
+            {% endfor %}
+            </ul>
+
+            <a href="/eliminar/{{nombre}}">❌ Eliminar</a>
+        </div>
+        {% endfor %}
+
+    </main>
+</body>
+</html>
