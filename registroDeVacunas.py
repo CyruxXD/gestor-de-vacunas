@@ -14,6 +14,7 @@
 import json
 import os
 from flask import Flask, render_template, request, redirect
+from openpyxl import Workbook, load_workbook
 
 class seguimientoDeVacunas:
 
@@ -21,12 +22,13 @@ class seguimientoDeVacunas:
         self.listadoDeMascotas = {}
         carpeta = os.path.dirname(__file__)
         self.data_file = os.path.join(carpeta, "registro visible.json")
+        self.exel_file = os.path.join(carpeta, "backup.xlsx")
         self.cargasrTodo()
     
     def guardarAimal (self):
         
         with open(self.data_file, "w") as f:
-            json.dump(self.listadoDeMascotas, f)
+            json.dump(self.listadoDeMascotas, f, indent=4)
 
     def cargasrTodo (self):
         if os.path.exists(self.data_file):
@@ -34,6 +36,45 @@ class seguimientoDeVacunas:
                 self.listadoDeMascotas = json.load(f)
         else:
             self.listadoDeMascotas = {}
+
+    def exportar_exel(self):
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "vacunas"
+
+        ws.append(["Nombre", "Vacuna", "Fecha"])
+
+        for nombre, vacunas in self.listadoDeMascotas.items():
+            for v in vacunas:
+                ws.append([nombre, v["vacuna"], v["fecha"]])
+        
+        wb.save(self.exel_file)
+    
+    def importar_exel(self):
+        if not os.path.exists(self.exel_file):
+            return
+        
+        wb = load_workbook(self.exel_file)
+        ws = wb.active
+
+        nuevo = {}
+
+        for row in ws.iter_rows(min_row=2, values_only=True):
+            nombre, vacuna, fecha = row
+
+            #  validacion basica
+            if not nombre or not vacuna:
+                continue
+            
+            if nombre not in nuevo:
+                nuevo[nombre] = []
+            
+            nuevo[nombre].append({
+                "vacuna": vacuna,
+                "fecha": str(fecha)
+            })
+        self.listadoDeMascotas = nuevo
+        self.guardarAimal()
 
 # 🔥 AQUÍ EMPIEZA FLASK
 
@@ -45,6 +86,18 @@ gestor = seguimientoDeVacunas()
 def inicio():
     print(gestor.listadoDeMascotas)
     return render_template("index.html", mascotas=gestor.listadoDeMascotas)
+
+# exportar a exel
+@app.route("/exportar")
+def exportar():
+    gestor.exportar_exel()
+    return redirect("/")
+
+#importar desde Exel
+@app.route("/importar")
+def importar():
+    gestor.importar_exel()
+    return redirect("/")
 
 # Agregar mascota
 @app.route("/agregar", methods=["POST"])

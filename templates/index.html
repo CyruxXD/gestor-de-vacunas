@@ -20,10 +20,23 @@
         <h2>Actualizar vacuna</h2>
         <form method="POST" action="/actualizar">
             <input name="nombre" placeholder="Nombre">
-            <input name="vacuna" placeholder="tipo de vacuna">
+            <input name="vacuna" placeholder="vacuna a actualizar">
             <input name="fecha" placeholder="Nueva fecha">
             <button>Actualizar</button>
         </form>
+
+        <!-- seccion de cumunicacion entre el json y el exel -->
+         <h2>Backup y Restauración</h2>
+        <div style="margin-bottom: 20px;">
+            <a href="/exportar">
+                <button type="button">📤 Exportar a Excel</button>
+            </a>
+
+            <a href="/importar">
+                <button type="button">📥 Importar desde Excel</button>
+            </a>
+        </div>
+
 
         <h2>Listado</h2>
 

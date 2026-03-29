@@ -1,1 +1,18 @@
-{"akyra": [{"vacuna": "rabia", "fecha": "05/06/2050"}]}
+{
+    "akyra": [
+        {
+            "vacuna": "rabia",
+            "fecha": "05/06/2050"
+        },
+        {
+            "vacuna": "parbo",
+            "fecha": "05/08/2026"
+        }
+    ],
+    "PEPE": [
+        {
+            "vacuna": "parbo",
+            "fecha": "05/08/2026"
+        }
+    ]
+}
