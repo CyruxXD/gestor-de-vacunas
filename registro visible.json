@@ -1,18 +1,708 @@
 {
-    "akyra": [
+    "sancho": [
         {
-            "vacuna": "rabia",
-            "fecha": "05/06/2050"
+            "vacuna": "bordetela",
+            "fecha": "14/02/26"
         },
         {
-            "vacuna": "parbo",
-            "fecha": "05/08/2026"
+            "vacuna": "rabia",
+            "fecha": "14/02/26"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "01/02/26"
+        },
+        {
+            "vacuna": "des. interna",
+            "fecha": "01/03/26"
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": "01/03/26"
         }
     ],
-    "PEPE": [
+    "Paris": [
         {
-            "vacuna": "parbo",
-            "fecha": "05/08/2026"
+            "vacuna": "bordetela",
+            "fecha": "14/02/26"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "14/02/26"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "01/02/26"
+        },
+        {
+            "vacuna": "des. interna",
+            "fecha": "01/03/26"
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": "01/03/26"
+        }
+    ],
+    "hector": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "14/02/26"
+        },
+        {
+            "vacuna": "bordetela",
+            "fecha": "14/02/26"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "01/02/26"
+        },
+        {
+            "vacuna": "des. interna",
+            "fecha": "01/03/26"
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": "01/03/26"
+        }
+    ],
+    "theo": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        }
+    ],
+    "mocha": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "13/12/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "29/01/26"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "13/12/25"
+        },
+        {
+            "vacuna": "des. interna",
+            "fecha": "22/01/26"
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": "29/01/26"
+        }
+    ],
+    "aussie": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "12/04/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "12/04/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "12/04/25"
+        }
+    ],
+    "maya": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "04/12/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "04/12/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "04/12/25"
+        }
+    ],
+    "betty": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "21/04/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "21/04/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "21/04/25"
+        }
+    ],
+    "runa": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        }
+    ],
+    "wanda": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "26/12/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "25/01/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "17/05/25"
+        }
+    ],
+    "lolita": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        }
+    ],
+    "cash": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "17/03/26"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "17/03/26"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "08/06/25"
+        }
+    ],
+    "nova": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "25/02/26"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "25/02/26"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "25/02/26"
+        }
+    ],
+    "malta": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        }
+    ],
+    "joker": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "21/03/26"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "21/01/26"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "24/01/26"
+        },
+        {
+            "vacuna": "des. interna",
+            "fecha": "28/02/26"
+        }
+    ],
+    "luci": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "22/08/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "22/08/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "22/08/25"
+        },
+        {
+            "vacuna": "des. interna",
+            "fecha": "15/03/26"
+        }
+    ],
+    "17": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "18/10/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "22/08/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "22/08/25"
+        },
+        {
+            "vacuna": "des. interna",
+            "fecha": ""
+        }
+    ],
+    "ranfis": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "04/10/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "02/08/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "02/08/25"
+        },
+        {
+            "vacuna": "des. interna",
+            "fecha": "06/03/26"
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": "06/03/26"
+        }
+    ],
+    "max": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "27/12/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "27/12/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "23/12/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "03/03/26"
+        }
+    ],
+    "bean": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        }
+    ],
+    "pepe": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "28/05/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "23/08/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "23/09/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "02/03/26"
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": "02/03/26"
+        }
+    ],
+    "miley": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "22/07/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "15/07/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "15/07/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "18/03/26"
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": "18/03/26"
+        }
+    ],
+    "nina": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        }
+    ],
+    "maia": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        }
+    ],
+    "groot": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "07/03/26"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "07/03/26"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "07/03/26"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "07/03/26"
+        }
+    ],
+    "mia": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "25/02/26"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "25/02/26"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "25/02/26"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "18/03/26"
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": "17/02/26"
+        }
+    ],
+    "chombita": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "22/09/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "22/09/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "22/09/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "17/03/26"
+        }
+    ],
+    "amapola": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "25/09/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "06/09/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "06/09/25"
+        }
+    ],
+    "shaq": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "13/03/26"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "19/03/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "19/08/25"
+        }
+    ],
+    "rocket": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        }
+    ],
+    "loki": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        },
+        {
+            "vacuna": "bordetela",
+            "fecha": "24/05/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "12/04/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "12/04/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": ""
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": "16/03"
+        }
+    ],
+    "lyam ": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "07/06/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "20/07/25"
+        }
+    ],
+    "lyam": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "07/06/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "20/07/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "07/06/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "06/03/26"
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": "06/03/26"
+        }
+    ],
+    "alaska": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "30/11/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "30/11/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "30/11/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": ""
+        },
+        {
+            "vacuna": "",
+            "fecha": ""
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": "20/03/26"
+        }
+    ],
+    "eli": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "14/03/26"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "14/03/26"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "26/02/26"
+        }
+    ],
+    "maggie": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "20/03/25"
+        },
+        {
+            "vacuna": "",
+            "fecha": ""
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "20/03/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "20/03/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "09/03/26"
+        }
+    ],
+    "max(pug)": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "20/03/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "20/03/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "20/03/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "09/03/24"
+        }
+    ],
+    "rocky": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "05/04/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "05/04/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "05/04/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "12/03/26"
+        },
+        {
+            "vacuna": "des. externa",
+            "fecha": ""
+        }
+    ],
+    "aquiles": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "09/10/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "29/04/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "29/05/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "25/02/26"
+        }
+    ],
+    "poodle(no identificado)": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "14/03/26"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "1/11/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "1/11/25"
+        },
+        {
+            "vacuna": "des.interna",
+            "fecha": "07/03/26"
+        }
+    ],
+    "vino": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "29/08/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "23/07/24"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "29/08/25"
+        }
+    ],
+    "coockie": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        }
+    ],
+    "akira": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "04/03/26"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "04/03/26"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "04/03/26"
+        }
+    ],
+    "rumba": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        }
+    ],
+    "amazonas": [
+        {
+            "vacuna": "bordetela",
+            "fecha": "11/11/25"
+        },
+        {
+            "vacuna": "rabia",
+            "fecha": "15/12/25"
+        },
+        {
+            "vacuna": "quintuple",
+            "fecha": "15/12/25"
+        }
+    ],
+    "phebe": [
+        {
+            "vacuna": "",
+            "fecha": ""
+        }
+    ],
+    "icaro": [
+        {
+            "vacuna": "",
+            "fecha": ""
         }
     ]
 }

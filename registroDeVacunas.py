@@ -13,7 +13,9 @@
  
 import json
 import os
+# esto es para correrlo con un html(tambien se usa el venv)
 from flask import Flask, render_template, request, redirect
+#esto es para crear un exel
 from openpyxl import Workbook, load_workbook
 
 class seguimientoDeVacunas:
