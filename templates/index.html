@@ -37,6 +37,18 @@
             </a>
         </div>
 
+        <div>
+            <h2>Buscar mascota</h2>
+            <form method="GET" action="/">
+                <input name="buscar" placeholder="Nombre del perro" value="{{ request.args.get('buscar', '') }}">
+                <button>Buscar</button>
+            </form>
+
+            <a href="/">
+                <button type="button">Limpiar busqueda</button>
+            </a>
+        </div>
+
 
         <h2>Listado</h2>
 

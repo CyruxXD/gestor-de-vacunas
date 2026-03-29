@@ -86,9 +86,22 @@ gestor = seguimientoDeVacunas()
 # Página principal
 @app.route("/")
 def inicio():
-    print(gestor.listadoDeMascotas)
-    return render_template("index.html", mascotas=gestor.listadoDeMascotas)
 
+    # buscador de mascotas
+    busqueda = request.args.get("buscar", "").lower()
+    print("Buscando: ", busqueda)
+
+    if busqueda:
+        filtrado = {
+            nombre: vacunas
+            for nombre, vacunas in gestor.listadoDeMascotas.items()
+            if busqueda in nombre.lower()
+        }
+    else:
+        filtrado = gestor.listadoDeMascotas
+    
+    return render_template("index.html", mascotas=filtrado)
+                           
 # exportar a exel
 @app.route("/exportar")
 def exportar():
