@@ -49,6 +49,31 @@
             </a>
         </div>
 
+        <h2>Próximas vacunas</h2>
+
+        {% for v in proximas %}
+            <p>
+                🐶 {{ v.nombre }} |
+                💉 {{ v.vacuna }} |
+                📅 {{ v.fecha }} |
+                ⏳ {{ v.dias }} días
+            </p>
+        {% endfor %}
+
+        <h2>🔴 Vacunas Vencidas</h2>
+
+        {% if vencidas %}
+            {% for v in vencidas %}
+                <div style="border:2px solid red; padding:5px; margin:5px;">
+                    <strong>{{ v.nombre }}</strong><br>
+                    💉 {{ v.vacuna }}<br>
+                    📅 Debió ser: {{ v.proxima_fecha }}<br>
+                    ⏰ Atraso: {{ v.dias }} días
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No hay vacunas vencidas 🎉</p>
+        {% endif %}
 
         <h2>Listado</h2>
 
