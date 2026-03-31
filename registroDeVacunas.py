@@ -46,11 +46,12 @@ class seguimientoDeVacunas:
         print("Ruta JSON:", self.data_file)
 
         self.cargasrTodo()
+
         self.arreglar_anos()
         self.guardarAimal()
+
     
-    def guardarAimal (self):
-        
+    def guardarAimal(self):
         with open(self.data_file, "w") as f:
             json.dump(self.listadoDeMascotas, f, indent=4)
 
@@ -208,17 +209,17 @@ class seguimientoDeVacunas:
                 else:
                     continue
 
-            dias = (proxima_fecha - hoy).days
+                dias = (proxima_fecha - hoy).days
 
-            # solo vencidas 
-            if dias < 0:
-                lista.append({
-                    "nombre": nombre,
-                    "vacuna": v["vacuna"],
-                    "fecha_aplicada": v["fecha"],
-                    "proxima_fecha": proxima_fecha.strftime("%d/%m/%Y"),
-                    "dias": dias
-                })
+                # solo vencidas 
+                if dias < 0:
+                    lista.append({
+                        "nombre": nombre,
+                        "vacuna": v["vacuna"],
+                        "fecha_aplicada": v["fecha"],
+                        "proxima_fecha": proxima_fecha.strftime("%d/%m/%Y"),
+                        "dias": dias
+                    })
         
         # ordenar por mas urgente (mas negativo primero)
         lista.sort(key=lambda x: x["dias"])
@@ -255,12 +256,13 @@ def inicio():
         }
     else:
         filtrado = gestor.listadoDeMascotas
-    
+
     proximas = gestor.proximo_a_vencerce()
     vencidas = gestor.vacunas_vencidas()
     print("proximas:", proximas)
     
     return render_template("index.html", mascotas=filtrado, proximas=proximas)
+
 
 
 # exportar a exel
